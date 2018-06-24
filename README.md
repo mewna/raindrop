@@ -51,7 +51,9 @@ To generate snowflakes, simply send a `GET` request to `http://raindrop-location
 ## Picking apart ids
 
 ```Elixir
-<< _sign::1, time::41, worker::10, seq::12 >> = <<  0::1,11286889534::41, 123::10, 2047::12 >>
+# << snowflake::integer-size(64) >>
+# << 0::1, 11286889534::41, 123::10, 2047::12 >>
+<< _sign::1, time::41, worker::10, seq::12 >> = Raindrop.Generator.gen_drop() 
 
 # Sign bit doesn't matter to us, so it can be ignored or just set to zero
 _sign::1,
