@@ -20,7 +20,7 @@ a worker id.
 
 ## Usage
 
-Raindrop uses Redis for building a cluster of generators. Use the following env. vars to run:
+Raindrop uses Redis via [Lace](https://github.com/queer/lace) for building a cluster of generators. Use the following env. vars to run:
 
 ```Bash
 # Port to run the generator on
