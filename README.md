@@ -63,7 +63,7 @@ worker::10,
 seq::12
 >> = <<
 # Sign bit, set to zero
-1::1,
+0::1,
 # Timestamp. Add your configured epoch to this to get the real time
 11286889534::41,
 # Random worker ID
