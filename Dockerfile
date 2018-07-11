@@ -12,6 +12,6 @@ RUN apk add git curl libcurl yaml-dev gcc musl-dev linux-headers libstdc++ bash
 COPY . /app
 
 RUN mix deps.get
-RUN mix compile
+RUN MIX_ENV=prod mix compile
 
-CMD epmd -daemon && mix phx.server
+CMD epmd -daemon && MIX_ENV=prod mix phx.server
