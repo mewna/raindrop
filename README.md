@@ -20,6 +20,8 @@ a worker id.
 
 ## Usage
 
+Raindrop is available as a Docker image: https://hub.docker.com/r/mewna/raindrop/
+
 Raindrop uses Redis via [Lace](https://github.com/queer/lace) for building a cluster of generators. Use the following env. vars to run:
 
 ```Bash
